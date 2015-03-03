@@ -6,7 +6,7 @@
 /*   By: dduval <dduval@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/03/03 13:55:29 by dduval            #+#    #+#             */
-/*   Updated: 2015/03/03 15:52:13 by dduval           ###   ########.fr       */
+/*   Updated: 2015/03/03 16:30:35 by dduval           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,8 @@ typedef	struct		s_magic
 	char			*desc;
 	int				coast;
 	t_effects		*effect;
+	int				type;
+	int				elem;
 	struct	s_magic	*next;
 	struct	s_magic	*prev;
 }					t_magic;
@@ -51,6 +53,8 @@ typedef	struct		s_beast
 	int				life;
 	t_effects		*effect;
 	int				atk;
+	int				type;
+	int				elem;
 	struct	s_beast	*next;
 	struct	s_beast	*prev;
 }					t_beast;
